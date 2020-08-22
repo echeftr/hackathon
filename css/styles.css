@@ -1,4 +1,3 @@
-/* Css vaiables check video */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
 :root {
     --primary: #f2f2f2;
@@ -17,7 +16,6 @@ body {
     
     margin: 10px 10px;
     line-height: 1.4em;
-    
     background: rgb(2,0,36);
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,94,9,1) 11%, rgba(0,212,255,1) 100%);
 background-repeat: no-repeat;
@@ -50,7 +48,8 @@ img {
 .logo {
     text-align: center;
     margin: 0;
-    }
+}
+
     .logo h1 {
         font-size: 4em;
     }
@@ -85,7 +84,6 @@ img {
 /* Header main */
 .header-main {
     display: grid;
-   
 }
 
 .header-text {
@@ -115,6 +113,7 @@ img {
     margin-top: 0;
     color: var(--light);
     }
+
 /* Boxes */
 .boxes {
     background: var(--primary);
@@ -150,13 +149,13 @@ img {
     grid-gap: 30px;
     grid-template-columns: repeat(1, 1fr);
     padding: 3em;
-    
-  }
+}
+
   .info h2 {
     text-align: center;
     font-size: 2em;
-    
-  }
+}
+
   .info ul {
     padding: 0px;
     padding-left: 20px;
@@ -191,7 +190,6 @@ img {
 .testi-boxes {
     display: grid;
     grid-gap: 20px;
-    
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
@@ -205,7 +203,6 @@ img {
     padding: 0 25px;
     margin-bottom: 30px;
     display: block;
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -222,17 +219,6 @@ img {
     border-radius: 100%;
 }
 
-/* Form nieuwsbrief moet nog verder stylen 
-.my-form {
-    border: 3px solid black;
-    padding: 10px;
-    background: #eee;
-    box-shadow: var(--shadow);
-    display: grid;
-    grid-gap: 10px;
-}*/
-
-
 /* Footer */
 footer {
     margin-top: 2em;
@@ -242,20 +228,7 @@ footer {
     padding: 1em;
 }
 
-/* Form contact moet nog verder stylen 
-.form {
-    padding: 20px;
-    border: 1px solid black;
-    text-align: left;
-    background: lightgray;
-    box-shadow: var(--shadow);
-    display: grid;
-    grid-gap: 20px;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}*/
-
-/* new contact form */
+/* Contact form */
 * {
     box-sizing: border-box;
 }
@@ -266,104 +239,125 @@ footer {
     margin-right: auto;
     padding: 1em;
 }
+
 .company-info ul {
     list-style: none;
     padding: 0;
-    }
+}
+
 .brand {
 text-align: center;
 }
+
 .brand span, .logo-subtitle span {
     color: #fff;
 }
+
 .wrapper {
     box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
 }
+
 .wrapper > * {
     padding: 1em;
 }
+
 .company-info {
     background: #c9e6ff;
 }
+
 .company-info h3, .company-info ul {
     text-align: left;
     margin: 0 0 1em 0;
 }
+
 .contact {
     background: #f9feff;
 }
+
 /* Form styles */
 .contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
 .contact form label {
     display: block;
 }
+
 .contact form p {
     margin: 0;
 }
+
 .contact form .full {
     grid-column: 1 / 3;
 }
+
 .contact form input, .contact form textarea, .contact form button {
     width: 100%;
     padding: 1em;
     border: 1px solid #c9e6ff;
 }
+
 .contact form button {
     background: #c9e6ff;
     border: 0;
     text-transform: uppercase;
 }
+
 .contact form button:hover, .contact form button:focus {
     background: #92bde7;
     color: #fff;
     outline: 0;
     transition: background-color 2s ease-out;
 }
+
 .fa {
     padding: 0 10px 0 0;
-
 }
+
 /* Newsletter */
 .newsletter {
     background: #f9feff;
 }
+
 /* Form styles */
 .newsletter form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
+
 .newsletter form label {
     display: block;
 }
+
 .newsletter form p {
     margin: 0;
 }
+
 .newsletter form .full {
     grid-column: 1 / 3;
 }
+
 .newsletter form input, .newsletter form textarea, .newsletter form button {
     width: 100%;
     padding: 1em;
     border: 1px solid #c9e6ff;
 }
+
 .newsletter form button {
     background: #c9e6ff;
     border: 0;
     text-transform: uppercase;
 }
+
 .newsletter form button:hover, .newsletter form button:focus {
     background: #92bde7;
     color: #fff;
     outline: 0;
     transition: background-color 2s ease-out;
 }
-
-
 
 /* Embeded youtube video */
 .video-container {
@@ -390,21 +384,21 @@ text-align: center;
 @media(max-width: 700px) {
     .logo h1 {
         font-size: 2.4em;
-}
+    }
     .header-text h1 {
         font-size: 2.2em;
         line-height: 1.8em;
         background:rgba(0, 0, 0, 0.5);
         padding: 5px;
-}
+    }
 
     .main-nav ul {
         grid-template-columns: 1fr;
-}
+    }
 
     .info {
         grid-template-columns: 1fr;
-}
+    }
 
     .info .btn {
         display: block;
@@ -413,13 +407,8 @@ text-align: center;
 }
       .testi-boxes {
        grid-template-columns: repeat(2, 1fr);
-       }
-       /* .form { 
-        grid-template-columns: 1fr;
-       }
-       .form-h2 {
-        color: white;
-       }*/
+    }
+     
 }
 
 /* Lagre screens new contact form */
@@ -428,9 +417,11 @@ text-align: center;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
+	
     .wrapper > * {
         padding: 2em;
     }
+	
     .company-info h1, .company-info h3, .company-info ul, .brand {
         text-align: left;
     }
